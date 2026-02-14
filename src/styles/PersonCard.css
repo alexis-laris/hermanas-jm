@@ -24,6 +24,12 @@
   transform: translateZ(0);
 }
 
+.person-image {
+  width: 180px;
+  height: 180px;
+
+}
+
 .person-card h3 {
   font-size: 2rem;
   color: #FF69B4;

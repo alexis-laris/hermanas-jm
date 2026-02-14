@@ -20,7 +20,13 @@ const YouTubeCard = () => {
         </div>
       </div>
 
+      <p>
+        Videos: Martes, Viernes, Sábado y Domingo
+      </p>
 
+      <p>
+        7:00 PM
+      </p>
 
 
       <a

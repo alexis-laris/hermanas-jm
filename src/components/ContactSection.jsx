@@ -18,10 +18,10 @@ const ContactSection = () => {
       <div className="contact-section">
         <h2>💌 TRABAJA CON NOSOTRAS 💌</h2>
         <a
-          href="mailto:contacto@jm.com"
+          href="mailto:modalysjimenez@gmail.com"
           className="contact-email"
         >
-          📧 contacto@jm.com
+          📧 modalysjimenez@gmail.com
         </a>
       </div>
 

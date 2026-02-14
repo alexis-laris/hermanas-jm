@@ -8,6 +8,7 @@ import ContactSection from './components/ContactSection.jsx';
 import Footer from './components/Footer';
 import FloatingStars from './components/FloatingStars.jsx';
 import './styles/App.css';
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -133,6 +134,7 @@ function App() {
 
 
         <h2 className="section-title">📍 Nuestros Salones de Eventos 📍</h2>
+
         <div className="locations-container">
           {locations.map((location, index) => (
             <LocationCard
@@ -140,6 +142,45 @@ function App() {
               {...location}
             />
           ))}
+        </div>
+
+        <div className="aparta-container">
+          <div className="aparta-box">
+            <h1>Aparta tu fecha</h1>
+
+            <div className="social-links">
+              <a
+                href="https://www.tiktok.com/@odalysanddafnne?lang=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="TikTok"
+                className="social-icon tiktok"
+              >
+                <FaTiktok size={28} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/panfletitosfiesta/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+                className="social-icon instagram"
+              >
+                <FaInstagram size={28} />
+              </a>
+            </div>
+
+            <div className="panfletitos-wrapper">
+              <div className="panfletitos-image">
+                <img
+                  src="/images/persons/panfletitosfiesta.png"
+                  alt="Panfletitos Fiesta"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+          </div>
         </div>
 
 
