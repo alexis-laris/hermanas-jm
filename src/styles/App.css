@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #FFE5EC 0%, #FFC4D6 50%, #FFB3C6 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.App {
+  position: relative;
+}
+
+.main-content {
+  opacity: 0;
+  animation: fadeIn 1s ease-in 3.5s forwards;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FF69B4;
+  margin: 60px 0 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(255, 105, 180, 0.4);
+  border-color: #FFB3D9;
+}
+
+.locations-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}

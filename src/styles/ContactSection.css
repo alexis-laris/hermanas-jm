@@ -1,0 +1,112 @@
+/* Contenedor general */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Card */
+.contact-section {
+  text-align: center;
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.contact-section:hover {
+  transform: translateY(-5px);
+}
+
+/* Título */
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #FF69B4;
+  margin-bottom: 30px;
+}
+
+/* Email botón */
+.contact-email {
+  font-size: 1.8rem;
+  color: #FF1493;
+  text-decoration: none;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #FFE5EC, #FFC4D6);
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+  word-break: break-word;
+}
+
+/* Hover */
+.contact-email:hover {
+  background: linear-gradient(135deg, #FFB3D9, #FF9DC6);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.4);
+  color: white;
+}
+
+/* Active */
+.contact-email:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 35px 20px;
+    border-radius: 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-email {
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+}
+
+/* ========================= */
+/* 📱 EXTRA SMALL (iPhone SE) */
+/* ========================= */
+@media (max-width: 480px) {
+
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-email {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+
+}
+
+/* ========================= */
+/* 💻 Desktop grande */
+/* ========================= */
+@media (min-width: 1200px) {
+
+  .contact-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-section {
+    margin: 40px;
+  }
+
+}
